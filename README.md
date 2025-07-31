@@ -1,5 +1,21 @@
 # AVAR2025
 
+
+## Installation
+
+Evaluate in Pharo 13:
+
+```Smalltalk
+
+Metacello new
+	baseline: 'AVAR2025';
+	repository: 'github://tinchodias/AVAR2025';
+	load
+
+```
+
+## Usage
+
 Open Transcript and evaluate in a Workspace:
 ```smalltalk
 	server := AVAR current newEchoMockServer
@@ -32,3 +48,7 @@ Additionally, you can send `view open` to open the view in Woden.
 
 Browse `RWBasicExamples` for more view examples.
 Browse subclasses of `RWLayout` for alternative layouts.
+
+## License
+
+The code is licensed under [MIT](LICENSE).
