@@ -18,7 +18,7 @@ Metacello new
 
 Open Transcript and evaluate in a Workspace:
 ```smalltalk
-	server := AVAR current newEchoMockServer
+	server := AVAR current newEchoMockServer.
 	server start.
 	"server stop."
 ```
