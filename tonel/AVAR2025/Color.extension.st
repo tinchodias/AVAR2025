@@ -1,7 +1,7 @@
 Extension { #name : 'Color' }
 
 { #category : '*AVAR2025' }
-Color >> asJsonDictionary [
+Color >> asAVAR [
 
 	^ {		self red.
 			self green.

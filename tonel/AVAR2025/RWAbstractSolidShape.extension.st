@@ -1,11 +1,11 @@
 Extension { #name : 'RWAbstractSolidShape' }
 
 { #category : '*AVAR2025' }
-RWAbstractSolidShape >> asJsonDictionaryIn: aRWElement [ 
+RWAbstractSolidShape >> asAVARIn: aRWElement [ 
 
 	^ { 
-		#color -> (self colorFor: aRWElement) asJsonDictionary.
+		#color -> (self colorFor: aRWElement) asAVAR.
 		#shapeDescription -> self className.
-		#extent -> (self extentFor: aRWElement) asJsonDictionary.
-		} asOrderedDictionary
+		#extent -> (self extentFor: aRWElement) asAVAR.
+		} asDictionary
 ]

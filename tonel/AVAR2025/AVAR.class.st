@@ -54,11 +54,11 @@ AVAR >> newEchoMockServer [
 { #category : 'accessing' }
 AVAR >> submitView: aRWView [
 
-	ZnClient new
-		forJsonREST;
-		url: url;
-		contents: aRWView asJsonDictionary;
-		post
+	^ ZnClient new
+			forJsonREST;
+			url: url;
+			contents: aRWView asAVAR;
+			post
 ]
 
 { #category : 'accessing' }

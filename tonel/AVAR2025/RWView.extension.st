@@ -1,13 +1,13 @@
 Extension { #name : 'RWView' }
 
 { #category : '*AVAR2025' }
-RWView >> asJsonDictionary [
+RWView >> asAVAR [
 
-	^ elements collect: [ :each | each asJsonDictionary ]
+	^ elements collect: [ :each | each asAVAR ] as: Array
 ]
 
 { #category : '*AVAR2025' }
 RWView >> openAVAR [
 
-	AVAR current submitView: self
+	^ AVAR current submitView: self
 ]

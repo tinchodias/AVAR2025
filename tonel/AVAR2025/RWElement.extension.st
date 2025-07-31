@@ -1,12 +1,12 @@
 Extension { #name : 'RWElement' }
 
 { #category : '*AVAR2025' }
-RWElement >> asJsonDictionary [
+RWElement >> asAVAR [
 
 	^ {  
-		#position -> self position asJsonDictionary.
-		#shape -> (self shape asJsonDictionaryIn: self).
-		#extent -> self extent asJsonDictionary.
+		#position -> self position asAVAR.
+		#shape -> (self shape asAVARIn: self).
+		#extent -> self extent asAVAR.
 		#model -> self model asString
-		} asOrderedDictionary
+		} asDictionary
 ]
