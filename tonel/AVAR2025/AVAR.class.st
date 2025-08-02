@@ -44,7 +44,7 @@ AVAR >> newEchoMockServer [
 				request contentType = ZnMimeType applicationJson ]])
 					ifTrue: [
 						(STON toJsonStringPretty: (STON fromString: request contents)) traceCr.
-						ZnResponse ok: request entity ]
+						ZnResponse ok: (ZnStringEntity json: '"done"') ]
 					ifFalse: [
 						ZnResponse badRequest: request ] ].
 
