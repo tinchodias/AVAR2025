@@ -1,6 +1,6 @@
 Extension { #name : 'Vector3' }
 
-{ #category : '*AVAR2025' }
+{ #category : '*AVAR2025-RW' }
 Vector3 >> asAVAR [
 
 	^ { x. y. z }

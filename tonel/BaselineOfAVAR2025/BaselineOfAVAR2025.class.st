@@ -5,16 +5,23 @@ Class {
 	#package : 'BaselineOfAVAR2025'
 }
 
-{ #category : 'baseline' }
+{ #category : 'baselines' }
 BaselineOfAVAR2025 >> baseline: spec [
 
 	<baseline>
 	spec for: #common do: [
-			self declareWodenRoassalOn: spec.
+		self declareWodenRoassalOn: spec.
 
-			spec
-				package: 'AVAR2025'
-				with: [ spec requires: #( 'WodenRoassal' ) ] ]
+		spec package: 'AVAR2025-Core'.
+
+		spec
+			package: 'AVAR2025-Roassal3'
+			with: [ spec requires: #( 'AVAR2025-Core' ) ].
+
+		spec
+			package: 'AVAR2025-RW'
+			with: [ spec requires: #( 'WodenRoassal' ) ]
+		]
 ]
 
 { #category : 'external projects' }

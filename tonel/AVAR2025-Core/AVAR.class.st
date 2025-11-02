@@ -7,8 +7,8 @@ Class {
 	#classInstVars : [
 		'current'
 	],
-	#category : 'AVAR2025',
-	#package : 'AVAR2025'
+	#category : 'AVAR2025-Core',
+	#package : 'AVAR2025-Core'
 }
 
 { #category : 'accessing' }
@@ -52,12 +52,12 @@ AVAR >> newEchoMockServer [
 ]
 
 { #category : 'accessing' }
-AVAR >> submitView: aRWView [
+AVAR >> submitAVAR: anObject [
 
 	^ ZnClient new
 			forJsonREST;
 			url: url;
-			contents: aRWView asAVAR;
+			contents: anObject;
 			post
 ]
 
