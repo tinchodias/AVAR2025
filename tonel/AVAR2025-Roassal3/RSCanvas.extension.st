@@ -8,7 +8,7 @@ RSCanvas >> asAVAR [
 	#type -> self className.
 	#nodes -> (nodes collect: [ :each | each asRS3AVAR ] as: Array).
 	#edges -> (edges collect: [ :each | each asRS3AVAR ] as: Array).
-	} asDictionary
+	} asOrderedDictionary
 ]
 
 { #category : '*AVAR2025-Roassal3' }

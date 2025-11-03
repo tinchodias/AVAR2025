@@ -4,7 +4,7 @@ Extension { #name : 'RSShape' }
 RSShape >> asRS3AVAR [
 
 	| dict |
-	dict := Dictionary new.
+	dict := OrderedDictionary new.
 	dict
 		at: #id put: self identityHash;
 		at: #type put: self className asString.
