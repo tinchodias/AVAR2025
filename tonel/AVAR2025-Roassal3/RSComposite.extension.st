@@ -5,8 +5,8 @@ RSComposite >> asRS3AVAR [
 
 	^ super asRS3AVAR
 		addAll: {
-			#nodes -> (nodes collect: [ :each | each asRS3AVAR ] as: Array).
-			#edges -> (lines collect: [ :each | each asRS3AVAR ] as: Array).
+			#nodes -> (self nodes collect: [ :each | each asRS3AVAR ] as: Array).
+			#edges -> (self lines collect: [ :each | each asRS3AVAR ] as: Array).
 			} asDictionary;
 		yourself
 ]
