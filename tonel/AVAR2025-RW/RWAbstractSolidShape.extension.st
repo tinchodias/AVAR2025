@@ -1,6 +1,6 @@
 Extension { #name : 'RWAbstractSolidShape' }
 
-{ #category : '*AVAR2025' }
+{ #category : '*AVAR2025-RW' }
 RWAbstractSolidShape >> asAVARIn: aRWElement [ 
 
 	^ {

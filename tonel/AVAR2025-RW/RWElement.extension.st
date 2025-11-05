@@ -1,6 +1,6 @@
 Extension { #name : 'RWElement' }
 
-{ #category : '*AVAR2025' }
+{ #category : '*AVAR2025-RW' }
 RWElement >> asAVAR [
 
 	^ {
